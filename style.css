@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100vh;
+  height: 100vh;
+  border: 1px solid darkslategrey;
+}
+
+#move-me-please {
+  width: 40px;
+  height: 40px;
+  background-color: darkslategrey;
+  position: absolute;
+}
