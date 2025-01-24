@@ -8,9 +8,11 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("click", (event) => {
-  moveMePlease.style.left = `${event.clientX}px`;
-  moveMePlease.style.top = `${event.clientY}px`;
-  moveMePlease.style.transform = `translate(-20px, -20px)`;
+  if (event.target === document.body) {
+    moveMePlease.style.left = `${event.clientX}px`;
+    moveMePlease.style.top = `${event.clientY}px`;
+    moveMePlease.style.transform = `translate(-20px, -20px)`;
+  }
 });
 
 function keyPress(event) {

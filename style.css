@@ -1,13 +1,13 @@
 * {
-  margin: 0;
+  margin: 20;
   padding: 0;
 }
 
 body {
   position: relative;
-  width: 100vh;
-  height: 100vh;
-  border: 1px solid darkslategrey;
+  width: 746px;
+  height: 746px;
+  border: 2px solid darkslategrey;
 }
 
 #move-me-please {
