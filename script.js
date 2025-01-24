@@ -15,16 +15,33 @@ document.addEventListener("click", (event) => {
 
 function keyPress(event) {
   if (event.key === "a") {
-    leftPosition -= 10;
-    moveMePlease.style.left = `${leftPosition}px`;
+    if (leftPosition < 0) {
+      moveMePlease.style.left = "0px";
+    } else {
+      leftPosition -= 10;
+      moveMePlease.style.left = `${leftPosition}px`;
+    }
   } else if (event.key === "d") {
-    leftPosition += 10;
-    moveMePlease.style.left = `${leftPosition}px`;
+    if (leftPosition > 706) {
+      moveMePlease.style.left = "706px";
+    } else {
+      leftPosition += 10;
+      moveMePlease.style.left = `${leftPosition}px`;
+    }
   } else if (event.key === "w") {
-    topPosition -= 10;
-    moveMePlease.style.top = `${topPosition}px`;
+    if (topPosition < 0) {
+      moveMePlease.style.top = "0px";
+    } else {
+      topPosition -= 10;
+      moveMePlease.style.top = `${topPosition}px`;
+    }
   } else if (event.key === "s") {
-    topPosition += 10;
-    moveMePlease.style.top = `${topPosition}px`;
+    if (topPosition > 706) {
+      moveMePlease.style.top = "706px";
+    } else {
+      topPosition += 10;
+      moveMePlease.style.top = `${topPosition}px`;
+    }
   }
 }
+console.log(window.innerHeight, window.innerWidth);
